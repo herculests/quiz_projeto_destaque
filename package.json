@@ -1,0 +1,91 @@
+{
+  "name": "quiz-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src",
+    "clean": "rimraf dist",
+    "test:file": "jest --watch",
+    "dist": "run-s clean build",
+    "start:dev": "run-s start:server",
+    "start": "webpack",
+    "build": "webpack --config webpack.config.js",
+    "start:server": "webpack-dev-server --config webpack.config.js",
+    "start:demo": "cross-env run-s start:server"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-import": "^1.12.0",
+    "css-loader": "^3.0.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.1",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "26.6.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "less-vars-to-js": "^1.3.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "npm-run-all": "^4.1.5",
+    "webpack-cli": "3"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@babel/compat-data": "^7.10.1",
+    "@babel/runtime": "^7.5.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.9.1",
+    "antd-img-crop": "^3.13.2",
+    "axios": "^0.21.0",
+    "babel-jest": "^26.6.0",
+    "babel-loader": "8.1.0",
+    "dotenv-webpack": "^1.7.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "flickr-sdk": "^3.10.0",
+    "i18next": "^17.0.4",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.7.4",
+    "react-qr-svg": "^2.3.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "vanilla-masker": "^1.2.0",
+    "web-vitals": "^0.2.4",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/*.(test|spec).js"
+    ],
+    "setupFiles": [
+      "./src/setupTests.js"
+    ],
+    "collectCoverage": true,
+    "verbose": true
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
+}

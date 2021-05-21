@@ -1,0 +1,233 @@
+{
+    "project": "Prosolos DUX",
+    "title": "Control Center",
+    "languages": {
+        "enUS": "English",
+        "ptBR": "Portuguese",
+        "esES": "Spanish"
+    },
+    "titleKey":{
+        "login": "Login",
+        "licenses": "Licenses",
+        "users": "Users",
+        "createUser": "create_user"
+    },
+    "components": {
+        "button":{
+            "dropdown":{
+                "exportReport": "Export report"
+            }
+        },
+        "datePicker":{
+            "rangerPicker":{
+                "today": "Today",
+                "week": "This week",
+                "month": "This month",
+                "lastMonth": "Last month"
+            }
+        },
+        "inputs":{
+            "inputPassword": {
+                "minPassword": "Minimum 6 characters",
+                "inputText": "This field is mandatory"
+            }
+        },
+        "layout":{
+            "header":{
+                "colorTheme": "Dark mode",
+                "logout": "Log out"
+            },
+            "sidebar": {
+                "confirmLogout": {
+                    "title": "Do you really want to leave?",
+                    "content": "When performing this action you will need to login to access the system again.",
+                    "ok": "Exit",
+                    "cancel": "Cancel"
+                },
+                "logout": "Log out"
+            }
+        },
+        "loading":{
+            "loading": "Processing..."
+        },
+        "table":{
+            "pagination": {
+                "prep": "from",
+                "item": "Items"
+            }
+        }
+    },
+    "rules": {
+        "required": "This field is mandatory",
+        "specialCharacters": "prohibited special characters",
+        "nameLastname": "First name and last name required!",
+        "specialCharactersNumber": "Prohibited special characters and numbers!",
+        "min2": "The minimum of 2 characters has not been entered",
+        "email": "Invalid email",
+        "numberAddress": "Invalid number"
+    },
+    "pages": {
+        "login":{
+            "buttonConfirm": "ENTER",
+            "labelInputPassword": "Password",
+            "labelInputCredentials": "Credentials",
+            "placeholderInputCredentials": "email@email.com.br / 000.000.00-00",
+            "textInfo": "Fill in the information to login.",
+            "titleInfo": "Welcome"
+        },
+        "licenses":{
+            "tiles":{
+                "titleLicenses": "Licenses found"
+            },
+            "filter":{
+                "labelBrand": "Brand",
+                "labelModel": "Model",
+                "labelAndroidId": "Android id",
+                "labelSn": "S/N",
+                "labelDate": "Activation period",
+                "labelResponsible": "Responsible",
+                "placeholderBrand": "Brand",
+                "placeholderModel": "Model",
+                "placeholderAndroidId": "Android id",
+                "placeholderSn": "S/N",
+                "placeholderResponsible": "Responsible"
+            },
+            "page":{
+                "table":{
+                    "labelFilter": "Actions",
+                    "id": "id",
+                    "brand": "Brand",
+                    "model": "Model",
+                    "androidId": "Android id",
+                    "serialNumber": "S/N",
+                    "activeAt": "Activation date",
+                    "responsibleName": "Responsible",
+                    "licenseKey": "Key",
+                    "serialNumberT": "Serial number"
+
+                },
+                "button":{
+                    "viewKey": "View Key",
+                    "leaveModal": "Ok",
+                    "filter": "Filter",
+                    "clearFields": "Clear fields",
+                    "newKey": "Generate new key",
+                    "generateLicense": "Generate license"
+                },
+                "title": "License Manager",
+                "titleModal": "License key - Scan the QR Code with DUX to activate."
+            }
+        },
+        "users":{
+            "tiles":{
+                "titleUsers": "Registered users"
+            },
+            "filter":{
+                "labelName": "Name",
+                "labelDocument": "Document",
+                "labelPhone": "Telephone",
+                "labelEmail": "E-mail",
+                "labelTypeUser": "Users type",
+                "labelStatus": "Status",
+                "labelDate": "Activation period",
+
+                "placeholderName": "Name",
+                "placeholderDocument": "Document",
+                "placeholderPhone": "Telephone",
+                "placeholderEmail": "Email",
+                "placeholderTypeUser": "Users type",
+                "placeholderStatus": "Status",
+
+                "selectActive": "Active",
+                "selectInactive": "Inactive"
+            },
+            "page":{
+                "table":{
+                    "labelFilter": "Actions",
+                    "id": "id",
+                    "name": "Name",
+                    "document": "Document",
+                    "phone": "Phone",
+                    "email": "email",
+                    "userType": "Users type",
+                    "status": "Status",
+                    "activeAt": "Activation date",
+                    "action": "Action",
+                    "usersType": {
+                        "common": "Comun",
+                        "admin": "Administrator"
+                    }
+                },
+                "button": {
+                    "filter": "Filter",
+                    "clearFields": "Clear fields",
+                    "createUser": "Register user",
+                    "actions": {
+                        "edit": "Edit",
+                        "inactivate": "Inactivate",
+                        "activate": "Activate",
+                        "delete": "Delete"
+                    }
+                },
+                "popconfirm":{
+                    "title": "Do you really want to delete the user? This action is irreversible.",
+                    "ok": "Delete",
+                    "cancel": "Cancel"
+                },
+                "title": "Registered users"
+            }
+        },
+        "CreateEndEditUser":{
+            "filds":{
+                "firstName": "First name",
+                "lastName": "Last name",
+                "document": "Document",
+                "phone": "Phone",
+                "email": "E-mail",
+                "password": "Password",
+                "confirmPassword": "Confirm password"
+            },
+            "button":{
+                "generatePassword": "Generate password",
+                "generateNewPassword": "Generate new password",
+                "cancel": "Cancel",
+                "save": "Save",
+                "registerUser": "Register user"
+            },
+            "validateFilds":{
+                "incompatiblePasswords": "Unsupported passwords",
+                "incorrectDocument": "Incorrect document",
+                "incorrectPhone": "Incorrect phone"
+            },
+            "modal":{
+                "title": "User successfully registered",
+                "title2": "Remember to save the password for",
+                "buttonNewCreate": "Register new user",
+                "buttonCreate": "Back to the panel"
+            },
+            "title": "User registration",
+            "titleEdit": "Edit User"
+        },
+        "error":{
+            "login":{
+                "type":{
+                    "unauthorizedAccess": "Unauthorized access",
+                    "connectionFail": "Network failure"
+                },
+                "description":{
+                    "unauthorizedAccess": "Check your data and try again!",
+                    "connectionFail": "Check your connection and try again!"
+                }
+            },
+            "createEditUser":{
+                "type":{
+                    "22": "User with the same document already exists",
+                    "21": "There is already a user with the same email"
+                },
+                "description":{
+                    "unauthorizedCreate": "Check your data and try again!"
+                }
+            }
+        }
+    }
+}

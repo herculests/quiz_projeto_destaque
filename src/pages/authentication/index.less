@@ -1,0 +1,193 @@
+.account-area-modal-layout {
+    margin: 0;
+    right: 100px;
+    max-width: 400px;
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.icon-left-hover:hover .anticon {
+    color: @primary-color !important;
+}
+
+.ant-modal {
+    padding: 24px 0;
+}
+
+.account-signup-area-modal-layout {
+    max-width: 900px;
+    width: 100% !important;
+}
+.account-signup-area-modal-layout .ant-modal-body {
+    min-height: 500px;
+}
+
+.account-signup-area-modal-layout .ant-modal-body {
+    padding: 0;
+    display: flex;
+}
+
+.result-signUp .ant-result-extra {
+    margin-top: 0;
+}
+
+.account-signup-header, .account-signup-content {
+    padding: 40px 34px 20px;
+}
+
+.account-signup-header {
+    max-width: 310px;
+    width: 100% !important;
+    background: @primary-color;
+}
+
+.account-signup-header .colored {
+    color: #FFF !important;
+}
+
+.account-signup-content {
+    width: 100%;
+    position: relative;
+}
+
+.steps-white .ant-steps-item-title {
+    color: #FFF !important;
+}
+
+.steps-white .ant-steps-item-content {
+    width: calc(100% - 50px);
+}
+
+.steps-white .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot,
+.steps-white .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+    color: #FFF;
+    background: #FFF;
+}
+
+.steps-white.ant-steps-dot .ant-steps-item-icon,
+.steps-white.ant-steps-dot.ant-steps-small .ant-steps-item-icon {
+    width: 11px;
+    height: 11px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.steps-white.ant-steps-dot .ant-steps-item-process .ant-steps-item-icon,
+.steps-white.ant-steps-dot.ant-steps-small .ant-steps-item-process .ant-steps-item-icon {
+    width: 17px;
+    height: 17px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.steps-white.ant-steps-vertical.ant-steps-dot .ant-steps-item-process .ant-steps-icon-dot {
+    left: -3px;
+    border: 3px solid #FFF;
+}
+
+.steps-white.ant-steps-vertical .ant-steps-item-icon {
+    margin-right: 30px;
+}
+
+.steps-white .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background-color: #FFF;
+}
+
+.steps-white.ant-steps-vertical.ant-steps-dot .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+    top: 7px;
+    left: -7px;
+    margin: 0;
+    padding: 11px 0 0px;
+}
+
+.signup-footer-step {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background: #F6F6F6;
+}
+
+.signup-responsive-100, .signup-responsive-n {
+    margin-left: 5px;
+}
+
+.signup-responsive-100 {
+    color: @success-color;
+}
+
+.fixed-widgets {
+    z-index: 99999;
+    right: 0 !important;
+    background: #FFF !important;
+    position: absolute !important;
+    border-radius: 6px 0 0 6px !important;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
+}
+
+@media (min-width: 1280px) {
+    .account-area-modal-layout {
+        right: calc((100% - 1180px)/2) !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .account-signup-area-modal-layout {
+        width: calc(100% - 60px) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-area-modal-layout {
+        width: calc(100% - 60px) !important;
+    }
+}
+
+@media (max-width: 730px) {
+    .account-signup-area-modal-layout .ant-modal-body {
+        display: block !important;
+    }
+
+    .account-signup-area-modal-layout.flexed .ant-modal-body {
+        display: flex !important;
+    }
+
+    .account-signup-header, .account-signup-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .account-signup-area-modal-layout .ant-modal-close {
+        color: #FFFFFFBF;
+    }
+
+    .account-signup-area-modal-layout .ant-modal-close:hover {
+        color: #FFF;
+    }
+}
+
+@media (max-width: 600px) {
+    .account-area-modal-layout {
+        top: 50%;
+        -ms-transform: translateY(-50%) translateX(50%);
+        transform: translateY(-50%) translateX(50%);
+        right: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .account-signup-header h2,
+    .account-signup-content h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 320px) {
+    .account-area-modal-layout {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,233 @@
+{
+    "project": "Prosolos DUX",
+    "title": "Centro de control",
+    "languages": {
+        "enUS": "Inglés",
+        "ptBR": "Portugués",
+        "esES": "Español"
+    },
+    "titleKey":{
+        "login": "Iniciar sesión",
+        "licenses": "Licencias",
+        "users": "Usuarios",
+        "createUser": "create_user"
+    },
+    "components": {
+        "button":{
+            "dropdown":{
+                "exportReport": "Exportar informe"
+            }
+        },
+        "datePicker":{
+            "rangerPicker":{
+                "today": "Hoy",
+                "week": "Esta semana",
+                "month": "Este mes",
+                "lastMonth": "El mes pasado"
+            }
+        },
+        "inputs":{
+            "inputPassword": {
+                "minPassword": "Mínimo de 6 caracteres",
+                "inputText": "Este campo es obligatorio"
+            }
+        },
+        "layout":{
+            "header":{
+                "colorTheme": "Modo oscuro",
+                "logout": "Cerrar sesión"
+            },
+            "sidebar": {
+                "confirmLogout": {
+                    "title": "¿De verdad quieres irte?",
+                    "content": "Al realizar esta acción, deberá iniciar sesión para acceder al sistema nuevamente.",
+                    "ok": "Salir",
+                    "cancel": "Cancelar"
+                },
+                "logout": "Cerrar sesión"
+            }
+        },
+        "loading":{
+            "loading": "Procesando..."
+        },
+        "table":{
+            "pagination": {
+                "prep": "desde",
+                "item": "Elementos"
+            }
+        }
+    },
+    "rules": {
+        "required": "Este campo es obligatorio",
+        "specialCharacters": "Caracteres especiales prohibidos",
+        "nameLastname": "¡Se requiere nombre y apellido!",
+        "specialCharactersNumber": "¡Caracteres y números especiales prohibidos!",
+        "min2": "No se ha introducido el mínimo de 2 caracteres",
+        "email": "Correo electrónico no válido",
+        "numberAddress": "Número no válido"
+    },
+    "pages": {
+        "login":{
+            "buttonConfirm": "ENTER",
+            "labelInputPassword": "Contraseña",
+            "labelInputCredentials": "Credenciales",
+            "placeholderInputCredentials": "email@email.com.br / 000.000.00-00",
+            "textInfo": "Complete la información para iniciar sesión.",
+            "titleInfo": "Bienvenido"
+        },
+        "licenses":{
+            "tiles":{
+                "titleLicenses": "Licencias encontradas"
+            },
+            "filter":{
+                "labelBrand": "Marca",
+                "labelModel": "Modelo",
+                "labelAndroidId": "ID de Android",
+                "labelSn": "S/N",
+                "labelDate": "Período de activación",
+                "labelResponsible": "Responsable",
+                "placeholderBrand": "Marca",
+                "placeholderModel": "Modelo",
+                "placeholderAndroidId": "ID de Android",
+                "placeholderSn": "S/N",
+                "placeholderResponsible": "Responsable"
+            },
+            "page":{
+                "table":{
+                    "labelFilter": "Comportamiento",
+                    "id": "id",
+                    "brand": "Marca",
+                    "model": "Modelo",
+                    "androidId": "ID de Android",
+                    "serialNumber": "S/N",
+                    "activeAt": "Fecha de activación",
+                    "responsibleName": "Responsable",
+                    "licenseKey": "Clave",
+                    "serialNumberT": "Número de serie"
+
+                },
+                "button":{
+                    "viewKey": "Ver clave",
+                    "leaveModal": "Ok",
+                    "filter": "Filtro",
+                    "clearFields": "Borrar campos",
+                    "newKey": "Generar nueva clave",
+                    "generateLicense": "Generar licencia"
+                },
+                "title": "Administrador de licencias",
+                "titleModal": "Clave de licencia: escanee el código QR con DUX para activar."
+            }
+        },
+        "users":{
+            "tiles":{
+                "titleUsers": "Usuarios registrados"
+            },
+            "filter":{
+                "labelName": "Nombre",
+                "labelDocument": "Documento",
+                "labelPhone": "Teléfono",
+                "labelEmail": "Correo electrónico",
+                "labelTypeUser": "Tipo de usuarios",
+                "labelStatus": "Estado",
+                "labelDate": "Período de activación",
+
+                "placeholderName": "Nombre",
+                "placeholderDocument": "Documento",
+                "placeholderPhone": "Teléfono",
+                "placeholderEmail": "Correo electrónico",
+                "placeholderTypeUser": "Tipo de usuarios",
+                "placeholderStatus": "Estado",
+
+                "selectActive": "Activo",
+                "selectInactive": "Inactivo"
+            },
+            "page":{
+                "table":{
+                    "labelFilter": "Comportamiento",
+                    "id": "id",
+                    "name": "Nombre",
+                    "document": "Documento",
+                    "phone": "Teléfono",
+                    "email": "Correo electrónico",
+                    "userType": "Tipo de usuarios",
+                    "status": "Estado",
+                    "activeAt": "Fecha de activación",
+                    "action": "Acción",
+                    "usersType": {
+                        "common": "Comum",
+                        "admin": "Administrador"
+                    }
+                },
+                "button":{
+                    "filter": "Filtro",
+                    "clearFields": "Borrar campos",
+                    "createUser": "Registrar usuario",
+                    "actions": {
+                        "edit": "Editar",
+                        "inactivate": "Inhabilitar",
+                        "activate": "Activar",
+                        "delete": "Eliminar"
+                    }
+                },
+                "popconfirm":{
+                    "title": "¿Realmente desea eliminar al usuario? Esta acción es irreversible",
+                    "ok": "Eliminar",
+                    "cancel": "Cancelar"
+                },
+                "title": "Usuarios registrados"
+            }
+        },
+        "CreateEndEditUser":{
+            "filds":{
+                "firstName": "Nombre",
+                "lastName": "Apellido",
+                "document": "Documento",
+                "phone": "Teléfono",
+                "email": "Correo electrónico",
+                "password": "Contraseña",
+                "confirmPassword": "Confirmar contraseña"
+            },
+            "button":{
+                "generatePassword": "Generar contraseña",
+                "generateNewPassword": "Generar nueva contraseña",
+                "cancel": "Cancelar",
+                "save": "Registrarse",
+                "registerUser": "Registrar usuario"
+            },
+            "validateFilds":{
+                "incompatiblePasswords": "Contraseñas no admitidas",
+                "incorrectDocument": "Documento incorrecto",
+                "incorrectPhone": "Teléfono incorrecto"
+            },
+            "modal":{
+                "title": "Usuario registrado correctamente",
+                "title2": "Recuerde guardar la contraseña para",
+                "buttonNewCreate": "Registrar nuevo usuario",
+                "buttonCreate": "Volver al panel"
+            },
+            "title": "Registro de usuario",
+            "titleEdit": "Editar usuario"
+        },
+        "error":{
+            "login":{
+                "type":{
+                    "unauthorizedAccess": "Acceso no autorizado",
+                    "connectionFail": "Falla de red"
+                },
+                "description":{
+                    "unauthorizedAccess": "¡Verifique sus datos y vuelva a intentarlo!",
+                    "connectionFail": "¡Compruebe su conexión y vuelva a intentarlo!"
+                }
+            },
+            "createEditUser":{
+                "type":{
+                    "22": "Ya existe un usuario con el mismo documento",
+                    "21": "Ya existe un usuario con el mismo correo electrónico"
+                },
+                "description":{
+                    "unauthorizedCreate": "¡Verifique sus datos y vuelva a intentarlo!"
+                }
+            }
+        }
+    }
+}

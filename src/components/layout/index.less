@@ -1,0 +1,26 @@
+.sidebar-menu-wrapper li > a {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+.layout-colapse {
+    margin-left: 200px;
+    min-height: 100vh !important;
+}
+
+.layout-colapse.collapsed {
+    margin-left: 80px;
+
+    @media (max-width: 640px) {
+        margin: 0px;
+    }
+}
+
+.ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-arrow-icon {
+    color: rgba(0, 0, 0, 0);
+    font-size: 10px;
+    font-style: normal;
+}
